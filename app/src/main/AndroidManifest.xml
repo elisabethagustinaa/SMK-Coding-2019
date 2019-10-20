@@ -13,6 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.ListFavoriteActivity"></activity>
+
+        <service android:name=".NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
         <activity android:name=".activity.DetailMovieActivity" />
         <activity android:name=".activity.ListMovieActivity" />
         <activity android:name=".activity.ProfilActivity" />
