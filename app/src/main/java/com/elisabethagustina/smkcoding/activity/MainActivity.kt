@@ -3,6 +3,7 @@ package com.elisabethagustina.smkcoding.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.elisabethagustina.smkcoding.R
+import kotlinx.android.synthetic.main.activity_detail_movie.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -20,6 +21,11 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intentFor<ListMovieActivity>())
 //            toast("Daftar Film Woyy")
+        }
+
+        button_favorit.onClick {
+            startActivity(intentFor<ListFavoriteActivity>())
+
         }
     }
 }
